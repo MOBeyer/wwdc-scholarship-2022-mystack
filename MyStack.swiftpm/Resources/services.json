@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "name": "Caddy",
+        "icon": "server.rack",
+        "description": "A web server and reverse proxy. As a reverse proxy, it directs all HTTP/HTTPS traffic directed to my server. Almost all other services rely on Caddy to proxy requests to them.",
+        "category": "base",
+        "dependencyNames": ["Docker"]
+    },
+    {
+        "id": 1,
+        "name": "Vaultwarden",
+        "icon": "key.viewfinder",
+        "description": "An alternative implementation of the Bitwarden server API written in Rust. Bitwarden is a password manager (it's also available on the App Store!).",
+        "category": "utilities",
+        "dependencyNames": ["Caddy", "Docker"]
+    },
+    {
+        "id": 2,
+        "name": "Gitea",
+        "icon": "chevron.left.forwardslash.chevron.right",
+        "description": "A community managed lightweight code hosting solution. It's like a lighter, self-hosted version of GitHub.",
+        "category": "utilities",
+        "dependencyNames": ["Caddy", "Docker"]
+    },
+    {
+        "id": 3,
+        "name": "PrivateBin",
+        "icon": "doc.on.clipboard",
+        "description": "A minimalist, open source online pastebin where the server has zero knowledge of pasted data. It uses end-to-end encryption to achieve this.",
+        "category": "media",
+        "dependencyNames": ["Caddy", "Docker"]
+    },
+    {
+        "id": 4,
+        "name": "MkDocs",
+        "icon": "book.closed.fill",
+        "description": "A static site generator that's geared towards building project documentation. I use it to document the project I'm describing in this playground!",
+        "category": "media",
+        "dependencyNames": ["Caddy", "Docker"]
+    },
+    {
+        "id": 5,
+        "name": "Pi-hole",
+        "icon": "hand.raised.fill",
+        "description": "A network-wide ad blocker that works by acting as a DNS server.",
+        "category": "networking",
+        "dependencyNames": ["Docker"]
+    },
+    {
+        "id": 6,
+        "name": "WireGuard",
+        "icon": "network.badge.shield.half.filled",
+        "description": "A modern VPN protocol that I use to access my server from outside of my home.",
+        "category": "networking",
+        "dependencyNames": []
+    },
+    {
+        "id": 7,
+        "name": "Docker",
+        "icon": "shippingbox.circle.fill",
+        "description": "A tool that allows you to run applications in containers, so that different applications and their dependencies are isolated.",
+        "category": "base",
+        "dependencyNames": []
+    },
+    {
+        "id": 8,
+        "name": "OpenSSH",
+        "icon": "text.and.command.macwindow",
+        "description": "A utility that gives me Secure SHell (SSH) access to my server remotely, allowing me to administrate it from the outside.",
+        "category": "base",
+        "dependencyNames": []
+    },
+    {
+        "id": 9,
+        "name": "FreshRSS",
+        "icon": "newspaper",
+        "description": "A self-hostable aggregator for RSS and Atom feeds. On my phone and computer, I use NetNewsWire (from the App Store) to login to my FreshRSS instance and get notifications for some feeds (e.g. updates to software I host, blogs, etc.).",
+        "category": "media",
+        "dependencyNames": ["Caddy", "Docker"]
+    }
+]
